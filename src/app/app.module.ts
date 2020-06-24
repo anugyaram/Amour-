@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,Injector } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -56,8 +56,8 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HomeComponent,
     ContactComponent,
     LoginComponent,
-    HighlightDirective,
-    SlideshowComponent,
+    HighlightDirective
+    
     
   ],
   imports: [
@@ -90,9 +90,17 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     {provide: 'BaseURL', useValue: baseURL}
   ],
   entryComponents:[
-    LoginComponent
+    LoginComponent,
+    SlideshowComponent
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private injector: Injector) {
+    const slider = createCustomElement(SlideshowComponent, { injector });
+    customElements.define('motley-slider', slider);
+  }
+ 
+  ngDoBootstrap() {}
+ }
 
