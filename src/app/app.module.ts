@@ -18,7 +18,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
-
+import { createCustomElement } from '@angular/elements';
 
 import { AppComponent } from './app.component';
 
@@ -56,8 +56,8 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HomeComponent,
     ContactComponent,
     LoginComponent,
-    HighlightDirective
-    
+    HighlightDirective,
+    SlideshowComponent
     
   ],
   imports: [
