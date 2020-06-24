@@ -37,12 +37,13 @@ import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
+
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
 import { baseURL } from './shared/baseurl';
 import { HighlightDirective } from './directives/highlight.directive';
-import { SlideshowComponent } from './slideshow/slideshow.component';
+
 
 
 @NgModule({
@@ -57,7 +58,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     ContactComponent,
     LoginComponent,
     HighlightDirective,
-    SlideshowComponent
+
     
   ],
   imports: [
@@ -91,16 +92,11 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
   ],
   entryComponents:[
     LoginComponent,
-    SlideshowComponent
+
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(private injector: Injector) {
-    const slider = createCustomElement(SlideshowComponent, { injector });
-    customElements.define('motley-slider', slider);
-  }
- 
-  ngDoBootstrap() {}
+  
  }
 
