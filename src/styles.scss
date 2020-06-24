@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'variables';
+
+
+// some basic resets 
+$lt-gray: #ffeded;
+$background-dark: #e12323;
+$background-light: #FFD0DC;
+$background-pale: #ffd4d8;
+$primary-color-dark:   #e12323;
+$primary-color:        #e12323;
+$primary-color-light:  #ffd8e1;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #ff7a9b;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #ffeded;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: Montserrat,sans-serif; 
+  
+}
+.container {
+    margin: 20px;
+    display:flex;
+}
+.background-primary {
+    background-color: $background-dark!important;
+  }
+.background-accent {
+    background-color: $accent-color!important;
+  }
+.text-floral-white {
+    color: floralwhite!important;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+.highlight {
+ 
+  z-index: 1;
+  transform: scale(1.01);
+}
