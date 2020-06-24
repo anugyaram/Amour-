@@ -1,0 +1,94 @@
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px" 
+    fxLayoutGap.xs="0">
+
+
+  <div fxFlex="40"  [@visibility]="visibility" [@expand]>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <h3>{{flower.name | uppercase}}</h3>
+          </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{baseURL + flower.image}}" alt={{flower.name}}>
+        <mat-card-content>
+          <p>{{flower.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button [routerLink] = "['/flowerdetail',prev]">
+            <span class="fa fa-chevron-left fa-lg"></span>
+          </button>
+          <button mat-button (click)="goBack()">BACK</button>
+          <button mat-button>LIKE</button>
+          <span class="flex-spacer"></span>
+          <button mat-button [routerLink] = "['/flowerdetail',prev]">
+            <span class="fa fa-chevron-right fa-lg"></span>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+ 
+    <div fxFlex="40"  [@visibility]="visibility" [@expand]>
+      <mat-list >
+        <h2> Reviews </h2>        
+        <mat-list-item *ngFor="let comment of flower.comments">
+          <p mat-line>
+            <span> {{comment.comment}} </span>
+          </p>
+          <p mat-line>
+            <span> {{comment.rating}} Stars</span>
+          </p>
+          <p mat-line>
+            <span> -- {{comment.author}} {{comment.date | date}} </span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+        <mat-list *ngIf="commentForm.valid">
+          <mat-list-item>
+            <p mat-line>{{commentForm.controls.comment.value}}</p>
+            <p mat-line>{{commentForm.controls.rating.value}}</p>
+            <p mat-line>-- {{commentForm.controls.author.value}}</p>
+          </mat-list-item>
+        </mat-list>
+     
+        <form novalidate [formGroup]="commentForm" #cform="ngForm" (ngSubmit)="onSubmit()">
+          <p>
+            <mat-form-field class="full-width">
+              <input matInput formControlName="author" placeholder="Name" type="text">
+              <mat-error *ngIf="formErrors.author">{{formErrors.author}}</mat-error>
+            </mat-form-field>
+          </p>
+          <table class="form-size">
+            <td>
+              <mat-slider formControlName="rating" class="example-margin"
+              [disabled]="disabled"
+              [invert]="invert"
+              [max]="max"
+              [min]="min"
+              [step]="step"
+              [thumbLabel]="thumbLabel"
+              [tickInterval]="getSliderTickInterval()"
+              [(ngModel)]="value"
+              [vertical]="vertical" >
+              </mat-slider>
+            </td>
+          </table>
+          <p>
+            <mat-form-field class="full-width">
+              <textarea matInput formControlName="comment" placeholder="Your Reviews" rows=12></textarea>
+              <mat-error *ngIf="formErrors.comment">{{formErrors.comment}}</mat-error>
+            </mat-form-field>
+          </p>
+          <button type="submit" mat-button class="background-primary text-floral-white"
+            [disabled]="commentForm.invalid">Submit</button>
+        </form>
+
+      
+    </div>
+    ss
+</div>

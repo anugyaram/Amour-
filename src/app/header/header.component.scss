@@ -1,0 +1,29 @@
+$lt-gray: #fdcece;
+$background-dark: #e12323;
+$background-light: #FFD0DC;
+$background-pale: #ffd4d8;
+$background-moredark: #e52f2f;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.active {
+    background: $background-pale;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: white ;
+    color:#e12323;
+    min-height: 150px;
+}
+
+mat-toolbar{
+    background: white ;
+    color: #E12323;
+}
+.horizon{
+    border-top: 1px solid $background-dark;
+}

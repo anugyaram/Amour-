@@ -1,0 +1,17 @@
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: white ;
+    color:#e12323;
+    min-height: 150px;
+}
+.carousel-item {
+  &.active, &.carousel-item-right, &.carousel-item-next {
+    display: flex !important;
+    flex-wrap: wrap
+  }
+}

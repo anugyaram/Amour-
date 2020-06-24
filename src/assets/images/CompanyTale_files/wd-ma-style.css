@@ -1,0 +1,239 @@
+.wd-ma-addtoCart-btn {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    z-index: 999998;
+    background-color: #353347;
+    padding: 8px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+    .wd-ma-addtoCart-btn:hover {
+        background-color: #484661;
+    }
+
+#addtocart-container {
+}
+
+.wd-ma-variants-outer {
+    display: none;
+    border: 1px solid #eae7e7;
+    padding: 15px;
+    position: absolute;
+    background-color: #ffffffa6;
+    z-index: 98;
+    margin: 0 auto;
+    right: 0;
+    top: 0;
+}
+
+.wd-ma-snackbar {
+    display: none;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px;
+    position: fixed;
+    z-index: 99999;
+    right: 15px;
+    font-size: 13px;
+    z-index: 999997;
+}
+
+
+wd-ma-variants-outer select {
+    width: 100%;
+}
+
+.wd-ma-variant-ok-btn {
+    display: block;
+    padding: 5px;
+    max-width: 125px;
+    background-color: #737373;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wd-ma-addtocart-chkbx {
+    display: inline;
+    margin-left: 2px;
+    color: #01031F;
+}
+
+.variant-loader {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    z-index: 99999;
+}
+
+.loader_topLeft {
+    left: 4px;
+    text-align: left;
+}
+
+.loader_topRight {
+    right: 4px;
+    text-align: right;
+}
+
+.wd-ma-variants-outer select {
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+.wd-ma-variants-outer label {
+    margin-bottom: 0px !important;
+}
+
+/*feature 2 CSS*/
+#wd-stickyCart {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    width: 70px;
+    height: 65px;
+}
+
+    #wd-stickyCart img {
+        height: 65px;
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+        -moz-box-shadow: 0px 0px 6px #aa9e9ee6;
+        -webkit-box-shadow: 0px 0px 6px #aa9e9ee6;
+        box-shadow: 0px 0px 6px #aa9e9ee6;
+        -moz-border-radius: 60px;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        padding: 12px 12px 8px 12px;
+    }
+
+
+
+#wd-stick-qty {
+    margin: 0;
+    padding: 0;
+    color: grey;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    top: 21px;
+    font-size: 13px;
+}
+
+#wd-stick-total {
+    margin: 0;
+    padding: 0;
+    color: grey;
+    font-size: 13px;
+}
+
+
+#wd-stickyCart {
+    position: fixed;
+    background-repeat: repeat-y; /* for vertical repeat */
+    background-repeat: repeat-x; /* for horizontal repeat */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999999;
+}
+
+
+
+.btn-main {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    height: 32px;
+    width: 32px;
+    background-color: #a2a0a0;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    line-height: normal;
+    border: none;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.topLeft {
+    top: 0;
+    left: 0;
+}
+
+.topRight {
+    top: 0;
+    right: 0;
+}
+
+.bottomLeft {
+    bottom: 21px;
+    left: 0;
+}
+
+.bottomRight {
+    bottom: 21px;
+    right: 0;
+}
+
+
+.wd-ma-selected-variants-info {
+    position: absolute;
+    bottom: 0px;
+}
+
+.wd-carticon {
+    overflow: visible;
+    position: initial;
+}
+
+.material-icons {
+    padding: 5px;
+}
+
+.close-left {
+    left: 5px;
+    top: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.close-right {
+    right: 5px;
+    top: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .variants label, .variants select, .wd-ma-variants-outer label, .wd-ma-variant-ok-btn, .wd-ma-variants-outer select {
+        font-size: 11px;
+    }
+
+    .wd-ma-variants-outer label {
+        display: none;
+    }
+
+    #wd-stickyCart {
+        top: 80px;
+    }
+
+        #wd-stickyCart img {
+            height: 50px;
+        }
+}

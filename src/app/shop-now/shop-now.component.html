@@ -1,0 +1,25 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+     
+      <div>
+        <h2>Shop Now</h2>
+      </div>
+    
+      <div fxFlex *ngIf="flowers" [@expand]>
+        <mat-grid-list cols="5" >
+            <mat-grid-tile *ngFor="let flower of flowers" [routerLink]="['/flowerdetail',flower.id]" appHighlight>
+              <mat-card>
+                <img height="200px" src="{{ baseURL + flower.image }}" alt={{flower.name}}>
+                <mat-card-footer class="footer">
+                  <h4>{{flower.name}}</h4>
+                  <h5>{{flower.price}}</h5>
+                </mat-card-footer>
+              </mat-card>
+          </mat-grid-tile>
+
+        </mat-grid-list>
+      </div>
+      
+</div>
