@@ -43,6 +43,8 @@ import { LoginComponent } from './login/login.component';
 
 import { baseURL } from './shared/baseurl';
 import { HighlightDirective } from './directives/highlight.directive';
+import { CarouselComponent } from './carousel/carousel.component';
+
 
 
 
@@ -58,6 +60,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     ContactComponent,
     LoginComponent,
     HighlightDirective,
+    CarouselComponent,
 
     
   ],
