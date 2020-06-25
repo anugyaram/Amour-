@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { Flower } from '../shared/flower';
 import { FlowerService } from '../services/flower.service';
 import { Promotion } from '../shared/promotion';
@@ -6,7 +6,7 @@ import { PromotionService } from '../services/promotion.service';
 import { Leader } from '../shared/leader';
 import { LeaderService } from '../services/leader.service';
 import { flyInOut,expand } from '../animations/app.animation';
-
+import { trigger, state, transition, style, animate } from '@angular/animations'; 
 
 @Component({
   selector: 'app-home',
@@ -18,7 +18,13 @@ import { flyInOut,expand } from '../animations/app.animation';
   },
   animations:[
     flyInOut(),
-    expand()
+    expand(),
+    trigger('fade',
+    [ 
+      state('void', style({ opacity : 0})),
+      transition(':enter',[ animate(300)]),
+      transition(':leave',[ animate(500)]),
+    ])
   ]
 })
 export class HomeComponent implements OnInit {
@@ -38,6 +44,17 @@ export class HomeComponent implements OnInit {
     this.flowerservice.getFeaturedFlower().subscribe((flower) => this.flower = flower, errmess => this.flowerErrMess = <any>errmess);
     this.promotionservice.getFeaturedPromotion().subscribe((promotion) => this.promotion = promotion, errmess => this.promErrMess = <any>errmess);
     this.leaderservice.getFeaturedLeader().subscribe((leader) => this.leader = leader, errmess => this.leadErrMess = <any>errmess);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+     if (window.pageYOffset > 550) {
+       let element = document.getElementById('navbar');
+       element.classList.add('sticky');
+     } else {
+      let element = document.getElementById('navbar');
+        element.classList.remove('sticky'); 
+     }
   }
 
 }

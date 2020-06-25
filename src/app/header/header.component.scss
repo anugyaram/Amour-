@@ -23,6 +23,7 @@ $background-moredark: #e52f2f;
 mat-toolbar{
     background: white ;
     color: #E12323;
+    
 }
 .horizon{
     border-top: 1px solid $background-dark;
@@ -33,3 +34,13 @@ mat-toolbar{
 
    
 }
+.sticky{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    height: 120px;
+    width: 100%;
+  }

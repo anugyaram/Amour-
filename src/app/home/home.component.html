@@ -4,10 +4,8 @@
      fxLayout.sm="column"
      fxLayout.xs="column"
      fxLayoutAlign.gt-md="space-around center"
-     fxLayoutGap="10px">
-
-
-     
+     fxLayoutGap="10px" class="web_homePage" (scroll)="onWindowScroll($event);">
+ 
 
 <mat-card *ngIf="flower" fxFlex [@expand]>
   <mat-card-header>
