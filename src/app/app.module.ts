@@ -19,6 +19,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
 import { createCustomElement } from '@angular/elements';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 
@@ -44,6 +45,9 @@ import { LoginComponent } from './login/login.component';
 import { baseURL } from './shared/baseurl';
 import { HighlightDirective } from './directives/highlight.directive';
 import { CarouselComponent } from './carousel/carousel.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatIconModule } from '@angular/material';
 
 
 
@@ -61,6 +65,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     LoginComponent,
     HighlightDirective,
     CarouselComponent,
+    NavbarComponent,
 
     
   ],
@@ -84,7 +89,11 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatSlideToggleModule,
     MatProgressSpinnerModule,
     MatSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSidenavModule,
+    LayoutModule,
+    MatIconModule
+
   ],
   providers: [
     FlowerService,

@@ -1,0 +1,21 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0px 12px 0 rgba(0,0,0,.08);
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+#nav .mat-list-item {
+  float: right;
+}
