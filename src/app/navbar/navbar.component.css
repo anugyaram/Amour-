@@ -7,15 +7,42 @@
   box-shadow: 3px 0px 12px 0 rgba(0,0,0,.08);
 }
 
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-}
-
 .hidden{
   display: none;
 }
 
 #nav .mat-list-item {
   float: right;
+}
+
+.mat-list-item{
+  color:#E12323;
+}
+
+.active {
+    background: #ffd4d8;
+}
+
+.mat-toolbar{
+    background: white ;
+    color: #E12323;
+    
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    height: 120px;
+    width: 100%;
+  }
+
+  .jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px 70px 30px;
+    background: white ;
+    min-height: 150px;
 }
