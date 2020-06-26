@@ -44,5 +44,6 @@ export class NavbarComponent {
     this.dialog.open(LoginComponent, {width: '500px', height: '450px'});
   }
 
+  
 
   }

@@ -1,12 +1,12 @@
-<div class="container jumbotron"
-    fxLayout="row"
-    fxLayout.sm="column"
-    fxLayout.xs="column"
-    fxLayoutAlign.xs="start center"
-    fxLayoutAlign.sm="start center"
-    fxLayoutAlign.gt-sm="center center"
-    fxLayoutGap="10px">
-  </div>
 
-  
-  
+  <div class="row">  
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >  
+      <div ngxSlickItem *ngFor="let image of images" class="slide">  
+        <img src="{{ image.img }}" width="100%">  
+      </div>  
+    </ngx-slick-carousel>  
+  </div>
+ 
+  <div class="button">
+    <a mat-flat-button color="warn" routerLink='/shop-now' routerLinkActive="active"><span class="btn">Shop Now</span></a>
+  </div>

@@ -25,9 +25,13 @@
 
 .mat-toolbar{
     background: white ;
-    color: #E12323;
-    
+    color: #E12323;   
 }
+
+.mat-button{
+  text-decoration: none;
+}
+
 
 .sticky{
     position: fixed;
@@ -42,7 +46,7 @@
 
   .jumbotron {
     margin: 0px auto;
-    padding: 70px 30px 70px 30px;
+    padding: 50px 50px 50px 50px;
     background: white ;
-    min-height: 150px;
+    min-height: 125px;
 }

@@ -20,6 +20,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
 import { createCustomElement } from '@angular/elements';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppComponent } from './app.component';
 
@@ -92,7 +93,8 @@ import { MatIconModule } from '@angular/material';
     HttpClientModule,
     MatSidenavModule,
     LayoutModule,
-    MatIconModule
+    MatIconModule,
+    SlickCarouselModule
 
   ],
   providers: [
@@ -104,11 +106,17 @@ import { MatIconModule } from '@angular/material';
   ],
   entryComponents:[
     LoginComponent,
-
+    HeaderComponent
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  constructor(private injector: Injector) {
+    const slider = createCustomElement(HeaderComponent, { injector });
+    customElements.define('motley-slider', slider);
+  }
+ 
+  ngDoBootstrap() {}
   
  }
 
