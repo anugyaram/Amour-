@@ -8,7 +8,7 @@
       </div>
     
       <div fxFlex *ngIf="flowers" [@expand]>
-        <mat-grid-list cols="5" >
+        <mat-grid-list cols="3" >
             <mat-grid-tile *ngFor="let flower of flowers" [routerLink]="['/flowerdetail',flower.id]" appHighlight>
               <mat-card>
                 <img height="200px" src="{{ baseURL + flower.image }}" alt={{flower.name}}>

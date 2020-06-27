@@ -1,56 +1,21 @@
 <app-header></app-header>
+<hr>
+<h1>Our Picks</h1>
+<h4>Section of our beloved products</h4>
+<br>
 <div class="container"
-     fxLayout="row"
-     fxLayout.sm="column"
-     fxLayout.xs="column"
-     fxLayoutAlign.gt-md="space-around center"
-     fxLayoutGap="10px" class="web_homePage" (scroll)="onWindowScroll($event);">
- 
+fxLayout="row"
+fxLayout.lt-md = "column"
+fxLayoutAlign.gt-sm="space-around center"
+fxLayoutGap="10px" class="web_homePage" (scroll)="onWindowScroll($event);">
 
-<mat-card *ngIf="flower" fxFlex [@expand]>
-  <mat-card-header>
-    <div mat-card-avatar></div>
-    <mat-card-title>
-      <h3>{{flower.name | uppercase}}</h3>
-    </mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="{{baseURL + flower.image}}" alt={{flower.name}}>
-  <mat-card-content>
-    <p>{{flower.description}}
-    </p>
-  </mat-card-content>
-</mat-card>
-
-
-<mat-card *ngIf="promotion" fxFlex [@expand]>
-  <mat-card-header>
-    <div mat-card-avatar></div>
-    <mat-card-title>
-      <h3>{{promotion.name | uppercase}}</h3>
-    </mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="{{baseURL + promotion.image}}" alt={{promotion.name}}>
-  <mat-card-content>
-    <p>{{promotion.description}}
-    </p>
-  </mat-card-content>
-</mat-card>
-
-
-<mat-card *ngIf="leader" fxFlex [@expand]>
-  <mat-card-header>
-    <div mat-card-avatar></div>
-    <mat-card-title>
-      <h3>{{leader.name | uppercase}}</h3>
-    </mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="{{baseURL + leader.image}}" alt={{leader.name}}>
-  <mat-card-content>
-    <p>{{leader.description}}
-    </p>
-  </mat-card-content>
-</mat-card>
-
+    
+     <div fxFlex="50" class="img-container">
+      <img src="/assets/images/pick1.png" alt="Company Tale">
+    </div>
+    <div fxFlex="50" class="img-container">
+      <img src="/assets/images/pick2.png" alt="Company Tale" >
+    </div>
 
 
 </div>
