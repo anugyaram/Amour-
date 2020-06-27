@@ -28,7 +28,7 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { ShopNowComponent } from './shop-now/shop-now.component';
 import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
-import { HeaderComponent } from './header/header.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
@@ -58,7 +58,6 @@ import { MatIconModule } from '@angular/material';
     AppComponent,
     ShopNowComponent,
     FlowerdetailComponent,
-    HeaderComponent,
     FooterComponent,
     AboutComponent,
     HomeComponent,
@@ -106,13 +105,13 @@ import { MatIconModule } from '@angular/material';
   ],
   entryComponents:[
     LoginComponent,
-    HeaderComponent
+    CarouselComponent
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {
-    const slider = createCustomElement(HeaderComponent, { injector });
+    const slider = createCustomElement(CarouselComponent, { injector });
     customElements.define('motley-slider', slider);
   }
  
