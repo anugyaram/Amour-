@@ -13,7 +13,7 @@ import { flyInOut,expand} from '../animations/app.animation';
     'style': 'display: block;'
   },
   animations:[
-    flyInOut(),
+   
     expand()
   ]
 })

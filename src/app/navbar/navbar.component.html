@@ -10,8 +10,8 @@
     <mat-toolbar><img src="/src/assets/images/logo2.PNG" height="55px" width="110px"></mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink='/home' routerLinkActive="active"><span class="fa fa-home fa-lg"></span>  Home</a>
+      <a mat-list-item routerLink='/shop-now' routerLinkActive="active"><span class="fa fa-list fa-lg"></span>  Shop All</a>
       <a mat-list-item routerLink='/aboutus' routerLinkActive="active"><span class="fa fa-info fa-lg"></span>  About</a>
-      <a mat-list-item routerLink='/shop-now' routerLinkActive="active"><span class="fa fa-list fa-lg"></span>  Shop Now</a>
       <a mat-list-item routerLink='/contactus' routerLinkActive="active"><span class="fa fa-home fa-lg"></span>  Contact</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -28,8 +28,8 @@
       <span>&nbsp;<img src="/src/assets/images/logo2.PNG" height="55px" width="110px"></span>&nbsp;&nbsp;
       <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
       <a mat-list-item routerLink='/contactus' routerLinkActive="active"><span class="fa fa-home fa-lg"></span>  Contact</a>
-      <a mat-list-item routerLink='/shop-now' routerLinkActive="active"><span class="fa fa-shopping-cart fa-lg"></span>  Shop Now</a>
       <a mat-list-item routerLink='/aboutus' routerLinkActive="active"><span class="fa fa-info fa-lg"></span>  About</a>
+      <a mat-list-item routerLink='/shop-now' routerLinkActive="active"><span class="fa fa-shopping-cart fa-lg"></span>  Shop All</a>
       <a mat-list-item routerLink='/home' routerLinkActive="active"><span class="fa fa-home fa-lg"></span>  Home</a>
       </mat-nav-list>
       <span class="flex-spacer"></span>
