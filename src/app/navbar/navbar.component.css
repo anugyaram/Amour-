@@ -13,6 +13,7 @@
 
 #nav .mat-list-item {
   float: right;
+  
 }
 
 .mat-list-item{
@@ -32,6 +33,14 @@
   text-decoration: none;
 }
 
+.mat-stroked-button{
+  text-decoration: none;
+}
+
+.mat-stroked-button:hover{
+  color: white;
+  background-color: #E12323;
+}
 
 .sticky{
     position: fixed;

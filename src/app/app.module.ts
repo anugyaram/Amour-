@@ -30,7 +30,7 @@ import { ShopNowComponent } from './shop-now/shop-now.component';
 import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
 
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
+import { TrendingsComponent } from './trendings/trendings.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 
@@ -59,13 +59,13 @@ import { MatIconModule } from '@angular/material';
     ShopNowComponent,
     FlowerdetailComponent,
     FooterComponent,
-    AboutComponent,
+    TrendingsComponent,
     HomeComponent,
     ContactComponent,
     LoginComponent,
     HighlightDirective,
     CarouselComponent,
-    NavbarComponent,
+    NavbarComponent
 
     
   ],

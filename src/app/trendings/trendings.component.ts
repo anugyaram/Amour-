@@ -4,9 +4,9 @@ import { Leader } from '../shared/leader';
 import { flyInOut,expand } from '../animations/app.animation';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  selector: 'app-trendings',
+  templateUrl: './trendings.component.html',
+  styleUrls: ['./trendings.component.scss'],
   host: {
     '[@flyInOut]': 'true',
     'style': 'display: block;'
@@ -16,8 +16,7 @@ import { flyInOut,expand } from '../animations/app.animation';
     expand()
   ]
 })
-export class AboutComponent implements OnInit {
-
+export class TrendingsComponent implements OnInit {
   leaders:Leader[];
   leadErrMess: string;
 
@@ -26,5 +25,6 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.leaderservice.getLeaders().subscribe((leader) => this.leaders = leader, errmess => this.leadErrMess = <any>errmess);
   }
+
 
 }
