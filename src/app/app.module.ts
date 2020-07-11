@@ -7,7 +7,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule,  MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { createCustomElement } from '@angular/elements';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 import { AppComponent } from './app.component';
 
@@ -28,7 +30,6 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { ShopNowComponent } from './shop-now/shop-now.component';
 import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
-
 import { FooterComponent } from './footer/footer.component';
 import { TrendingsComponent } from './trendings/trendings.component';
 import { HomeComponent } from './home/home.component';
@@ -36,9 +37,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { FlowerService } from './services/flower.service';
 import { PromotionService } from './services/promotion.service';
-import { LeaderService } from './services/leader.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
-
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
@@ -49,6 +48,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatIconModule } from '@angular/material';
+import { LuxeryComponent } from './luxery/luxery.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -65,7 +66,9 @@ import { MatIconModule } from '@angular/material';
     LoginComponent,
     HighlightDirective,
     CarouselComponent,
-    NavbarComponent
+    NavbarComponent,
+    LuxeryComponent,
+    CartComponent
 
     
   ],
@@ -93,13 +96,13 @@ import { MatIconModule } from '@angular/material';
     MatSidenavModule,
     LayoutModule,
     MatIconModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MatMenuModule
 
   ],
   providers: [
     FlowerService,
     PromotionService,
-    LeaderService,
     ProcessHTTPMsgService,
     {provide: 'BaseURL', useValue: baseURL}
   ],

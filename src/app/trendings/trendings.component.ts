@@ -1,7 +1,6 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { LeaderService} from '../services/leader.service';
-import { Leader } from '../shared/leader';
+import { Component, OnInit, Inject, ViewChild} from '@angular/core';
 import { flyInOut,expand } from '../animations/app.animation';
+
 
 @Component({
   selector: 'app-trendings',
@@ -17,14 +16,9 @@ import { flyInOut,expand } from '../animations/app.animation';
   ]
 })
 export class TrendingsComponent implements OnInit {
-  leaders:Leader[];
-  leadErrMess: string;
 
-  constructor(private leaderservice:LeaderService,@Inject('BaseURL') public baseURL) { }
-
+  
   ngOnInit() {
-    this.leaderservice.getLeaders().subscribe((leader) => this.leaders = leader, errmess => this.leadErrMess = <any>errmess);
   }
-
 
 }

@@ -1,0 +1,34 @@
+.footer{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+}
+
+h1,h4{
+    text-align: center;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.img-icon{
+    position: relative;
+	display: inline-block;
+}
+.edit {
+	padding-top: 7px;	
+	padding-right: 7px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+}
+.circle-icon {
+    background: #8b8484;
+    color: white;
+    padding:5px;
+    border-radius: 50%;
+}

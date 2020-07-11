@@ -5,7 +5,6 @@ import { Flower } from '../shared/flower';
 import { FlowerService } from '../services/flower.service';
 import { switchMap } from 'rxjs/operators';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Comment } from '../shared/comment';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { visibility,flyInOut,expand } from '../animations/app.animation';
 
@@ -82,7 +81,7 @@ export class FlowerdetailComponent implements OnInit {
                   private route: ActivatedRoute,
                   private location: Location,
                   private fb: FormBuilder, @Inject('BaseURL') public baseURL) {
-      this.createForm();
+     
     }
   
     ngOnInit(): void {
@@ -114,56 +113,8 @@ export class FlowerdetailComponent implements OnInit {
       this.location.back();
     }
   
-    createForm(){
-      this.commentForm=this.fb.group({
-        author: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(25),]],
-        rating: [5],
-        comment: ['', [Validators.required,]],
-        date: ['']
-      });
-      this.commentForm.valueChanges
-        .subscribe(data=> this.onValueChanged(data));
-      
-      this.onValueChanged();
-    }
+   
+   
   
-    onValueChanged(data?: any){
-      if(!this.commentForm){return ;}
-      const form= this.commentForm;
-      for (const field in this.formErrors){
-        if(this.formErrors.hasOwnProperty(field)){
-          this.formErrors[field]='';  //clear previous error messages, if any
-          const control= form.get(field)
-          if (control && control.dirty && !control.valid){
-            const messages= this.validationMessages[field];
-            for(const key in control.errors){
-              if(control.errors.hasOwnProperty(key)){
-                this.formErrors[field] += messages[key] + ' ';
-              }
-            }
-          }
-        }
-      }
-    }
   
-  onSubmit(){
-    this.comment= this.commentForm.value;
-    this.comment.date = new Date().toISOString();
-    console.log(this.comment);
-    this.flowercopy.comments.push(this.comment);
-    this.flowerService.putFlower(this.flowercopy).subscribe(flower => {
-      this.flower = flower;
-      this.flowercopy = flower;
-    },errmess => { 
-      this.flower= null;
-      this.errMess = <any>errmess;
-    });
-    this.commentForm.reset({
-      author: [' '],
-      rating: 5,
-      comment: [' '],
-    });
-    this.commentFormDirective.resetForm();
-  }
-
 }

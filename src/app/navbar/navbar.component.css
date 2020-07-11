@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 220px;
   box-shadow: 3px 0px 12px 0 rgba(0,0,0,.08);
 }
 
@@ -59,3 +59,58 @@
     background: white ;
     min-height: 120px;
 }
+
+
+.dropbtn {
+  background-color: white;
+  color: #E12323;
+  border: none;
+  font-size: medium;
+  padding-top: 9px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 220px;
+ z-index: 1;
+}
+
+.dropdown-content a {
+  color: #E12323;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-size: medium;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #FFD0DC;
+  display: block;
+}
+
+.dropdown:hover .dropbtn .fa-angle-down{
+  visibility: collapse;
+}
+
+.dropbtn .fa-angle-up{
+  display: none;
+}
+
+.dropdown:hover .fa-angle-up{
+  display: inline-block;
+}
+
+

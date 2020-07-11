@@ -1,169 +1,50 @@
 import { Flower } from './flower';
 
 export const FLOWERS: Flower[] = [
-    {
-        id: '0',
-        name: 'Uthappizza',
-        image: '/assets/images/uthappizza.png',
-        featured: true,
-        specifications: 'Hot',
-        price: '4.99',
-        // tslint:disable-next-line:max-line-length
-        description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-        comments: [
-            {
-                rating: 5,
-                comment: 'Imagine all the eatables, living in conFusion!',
-                author: 'John Lemon',
-                date: '2012-10-16T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Sends anyone to heaven, I wish I could get my mother-in-law to eat it!',
-                author: 'Paul McVites',
-                date: '2014-09-05T17:57:28.556094Z'
-            },
-            {
-                rating: 3,
-                comment: 'Eat it, just eat it!',
-                author: 'Michael Jaikishan',
-                date: '2015-02-13T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Ultimate, Reaching for the stars!',
-                author: 'Ringo Starry',
-                date: '2013-12-02T17:57:28.556094Z'
-            },
-            {
-                rating: 2,
-                comment: 'It\'s your birthday, we\'re gonna party!',
-                author: '25 Cent',
-                date: '2011-12-02T17:57:28.556094Z'
-            }
-        ]
-    },
-    {
-        id: '1',
-        name: 'Zucchipakoda',
-        image: '/assets/images/zucchipakoda.png',
-        featured: false,
-        specifications: '',
-        price: '1.99',
-        description: 'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
-        comments: [
-            {
-                rating: 5,
-                comment: 'Imagine all the eatables, living in conFusion!',
-                author: 'John Lemon',
-                date: '2012-10-16T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Sends anyone to heaven, I wish I could get my mother-in-law to eat it!',
-                author: 'Paul McVites',
-                date: '2014-09-05T17:57:28.556094Z'
-            },
-            {
-                rating: 3,
-                comment: 'Eat it, just eat it!',
-                author: 'Michael Jaikishan',
-                date: '2015-02-13T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Ultimate, Reaching for the stars!',
-                author: 'Ringo Starry',
-                date: '2013-12-02T17:57:28.556094Z'
-            },
-            {
-                rating: 2,
-                comment: 'It\'s your birthday, we\'re gonna party!',
-                author: '25 Cent',
-                date: '2011-12-02T17:57:28.556094Z'
-            }
-        ]
-    },
-    {
-        id: '2',
-        name: 'Vadonut',
-        image: '/assets/images/vadonut.png',
-        featured: false,
-        specifications: 'New',
-        price: '1.99',
-        description: 'A quintessential ConFusion experience, is it a vada or is it a donut?',
-        comments: [
-            {
-                rating: 5,
-                comment: 'Imagine all the eatables, living in conFusion!',
-                author: 'John Lemon',
-                date: '2012-10-16T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Sends anyone to heaven, I wish I could get my mother-in-law to eat it!',
-                author: 'Paul McVites',
-                date: '2014-09-05T17:57:28.556094Z'
-            },
-            {
-                rating: 3,
-                comment: 'Eat it, just eat it!',
-                author: 'Michael Jaikishan',
-                date: '2015-02-13T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Ultimate, Reaching for the stars!',
-                author: 'Ringo Starry',
-                date: '2013-12-02T17:57:28.556094Z'
-            },
-            {
-                rating: 2,
-                comment: 'It\'s your birthday, we\'re gonna party!',
-                author: '25 Cent',
-                date: '2011-12-02T17:57:28.556094Z'
-            }
-        ]
-    },
-    {
-        id: '3',
-        name: 'ElaiCheese Cake',
-        image: '/assets/images/elaicheesecake.png',
-        featured: false,
-        specifications: '',
-        price: '2.99',
-        description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
-        comments: [
-            {
-                rating: 5,
-                comment: 'Imagine all the eatables, living in conFusion!',
-                author: 'John Lemon',
-                date: '2012-10-16T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Sends anyone to heaven, I wish I could get my mother-in-law to eat it!',
-                author: 'Paul McVites',
-                date: '2014-09-05T17:57:28.556094Z'
-            },
-            {
-                rating: 3,
-                comment: 'Eat it, just eat it!',
-                author: 'Michael Jaikishan',
-                date: '2015-02-13T17:57:28.556094Z'
-            },
-            {
-                rating: 4,
-                comment: 'Ultimate, Reaching for the stars!',
-                author: 'Ringo Starry',
-                date: '2013-12-02T17:57:28.556094Z'
-            },
-            {
-                rating: 2,
-                comment: 'It\'s your birthday, we\'re gonna party!',
-                author: '25 Cent',
-                date: '2011-12-02T17:57:28.556094Z'
-            }
-        ]
-    }
-];
+          {
+            "id": "0",
+            "name": "ROSES – CLASSIC CUBO",
+            "image": "images/ROSES – CLASSIC CUBO.png",
+            "category": "CLASSIC CUBO",
+            "specifications": "Cubo Box specification | 7″(h) x 7″(w)",
+            "price": "RS. 2,000",
+            "description": "Be captivated by the ethereal beauty of handpicked roses.The roses are especially chosen to enhance the expression of love and care and embrace the little happiness with a box of love gifted in a form of cubo."
+          },
+          {
+            "id": "1",
+            "name": "CARNATIONS - CRYSTAL GRANDE",
+            "image": "images/CARNATIONS - CRYSTAL GRANDE.png",
+            "category":"CRYSTAL GRANDE",
+            "specifications": "Grande Box specification | 3″(h) x 13″(w) x 9″(d)",
+            "price": "RS. 3,500",
+            "description": "Carnations in a Grande Crystal beam with gaiety. Gift a rich assortment of carnations to brighten up someone’s day today!"
+          },
+          {
+            "id": "2",
+            "name": "LILIES – CLASSIC RONDE",
+            "image": "images/LILIES – CLASSIC RONDE.png",
+            "category":"CLASSIC RONDE",
+            "specifications": "Ronde Box specification | 7″(h) x 8″(dia)",
+            "price": "RS. 2,000",
+            "description": "Fragrance that could match up to Eden, these collectively arranged Lilies make any room look better! Get these eyeful beauties to glow up the spirit around you. "
+          },
+          {
+            "id": "4",
+            "name": "SUÈDE CUBO - LILIES",
+            "image": "images/SUÈDE CUBO - LILIES.png",
+            "category": " ",
+            "specifications": "Cubo Box specification | 7″(h) x 7″(w)",
+            "price": "RS. 2,500",
+            "description": "Fragrance that could match up to Eden, these collectively arranged Lilies make any room look better! Get these eyeful beauties in a suede cubo box to glow up the spirit around you and cherish the gleaming smiles on the faces of your loved ones."
+          },
+          {
+            "id": "5",
+            "name": "LILIES – CRYSTAL CUBO",
+            "image": "images/LILIES – CRYSTAL CUBO.png",
+            "category": "CRYSTAL CUBO",
+            "specifications": "Crystal Box specification | 7″(h) x 7″(w)",
+            "price": "RS. 2,500",
+            "description": "Celebrate long-term relationships with a set of graceful Lilies in a crystal box. Get these eyeful beauties to glow up the spirit around you."
+          }
+        ];
+        

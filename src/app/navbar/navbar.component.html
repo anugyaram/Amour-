@@ -13,8 +13,16 @@
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
       <a mat-list-item routerLink='/trendings' routerLinkActive="active">  TRENDING</a>
       <a mat-list-item routerLink='/contactus' routerLinkActive="active">  VARIETY</a>
-      <a mat-list-item routerLink='/contactus' routerLinkActive="active">  LUXERY ITEM</a>
-    </mat-nav-list>
+     
+    </mat-nav-list>   
+    <div class="dropdown">
+      <button class="dropbtn" > LUXERY COLLECTIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
+      <div class="dropdown-content" id="navbar">
+        <a routerLink='/luxery'>CLASSIC CUBO</a>
+        <a routerLink='/luxery'>CRYSTAL GRANDE</a>
+        <a routerLink='/luxery'>CLASSIC RONDE</a>
+      </div>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar #stickyMenu class="sticky">
@@ -28,12 +36,22 @@
       </button>
       <span>&nbsp;<img src="/src/assets/images/logo2.PNG" height="55px" width="110px"></span>&nbsp;&nbsp;
       <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
-        <a mat-list-item routerLink='/luxery' routerLinkActive="active">  LUXERY ITEM</a>
       <a mat-list-item routerLink='/contactus' routerLinkActive="active">  VARIETY</a>
       <a mat-list-item routerLink='/trendings' routerLinkActive="active">  TRENDING</a>
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
       </mat-nav-list>
+      
+      <div class="dropdown">
+        <button class="dropbtn">LUXERY COLLECTIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
+        <div class="dropdown-content">
+          <a routerLink='/luxery'>CLASSIC CUBO</a>
+          <a routerLink='/luxery'>CRYSTAL GRANDE</a>
+          <a routerLink='/luxery'>CLASSIC RONDE</a>
+        </div>
+      </div>
+
+
       <span class="flex-spacer"></span>
       <a mat-stroked-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> LOGIN</a>&nbsp;
       <a mat-stroked-button (click)="addToCart()"><span class="fa fa-cart-arrow-down fa-lg"></span> CART</a>

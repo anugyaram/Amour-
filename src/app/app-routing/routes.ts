@@ -4,6 +4,7 @@ import { HomeComponent } from '../home/home.component';
 import { TrendingsComponent } from '../trendings/trendings.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ShopNowComponent } from '../shop-now/shop-now.component';
+import { LuxeryComponent } from '../luxery/luxery.component';
 
 export const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'trendings', component: TrendingsComponent},
   { path: 'flowerdetail/:id',     component: FlowerdetailComponent },
   {path: '', redirectTo:'/home', pathMatch:'full'},
+  { path: 'luxery',component: LuxeryComponent}
 ];

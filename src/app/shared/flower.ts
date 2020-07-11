@@ -1,11 +1,9 @@
-import { Comment } from './comment';
 export class Flower {
     id: string;
     name: string;
     image: string;
-    featured: boolean;
+    category: string;
     specifications: string;
     price: string;
-    description: string;
-    comments: Comment[];
+    description: string;  
 }
