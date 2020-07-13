@@ -1,38 +1,46 @@
 <br>
 <div class="container"
-    fxLayout="row"
-    fxLayout.sm="column"
-    fxLayout.xs="column"
-    fxLayoutAlign.gt-md="space-around center"
-    fxLayoutGap="10px" 
-    fxLayoutGap.xs="0">
+  fxLayout="column"
+  fxLayoutGap="10px">
 
 
-  <div fxFlex="40"  [@visibility]="visibility" [@expand]>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>
-            <h3>{{flower.name | uppercase}}</h3>
-          </mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="{{baseURL + flower.image}}" alt={{flower.name}}>
-        <mat-card-content>
-          <p>{{flower.description}}
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button [routerLink] = "['/flowerdetail',prev]">
-            <span class="fa fa-chevron-left fa-lg"></span>
-          </button>
-          <button mat-button (click)="goBack()">BACK</button>
-          <button mat-button>ADD TO CART</button>
-          <span class="flex-spacer"></span>
-          <button mat-button [routerLink] = "['/flowerdetail',prev]">
-            <span class="fa fa-chevron-right fa-lg"></span>
-          </button>
-        </mat-card-actions>
-      </mat-card>
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      
+      <div fxFlex="60">
+        <img src="{{baseURL + flower.image}}" alt="Company Tale"  height="400px" width="400px">
+      </div>
+      <div fxFlex="40">
+        <h3>{{flower.name | uppercase}}</h3>
+        <h4>{{flower.price}}</h4>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Select city</mat-label>
+          <mat-select>
+            <mat-option value="1">Delhi</mat-option>
+            <mat-option value="2">Pune</mat-option>
+            <mat-option value="3">Mumbai</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <h4>Quantity</h4>
+        <mat-slider formControlName="rating" class="example-margin"
+              [disabled]="disabled"
+              [invert]="invert"
+              [max]="max"
+              [min]="min"
+              [step]="step"
+              [thumbLabel]="thumbLabel"
+              [tickInterval]="getSliderTickInterval()"
+              [(ngModel)]="value"
+              [vertical]="vertical" >
+              </mat-slider>
+        <button class="addCart">ADD TO CART</button>
+        <br>
+        <p>{{flower.description}}</p><br>
+        <p>{{flower.specifications}}</p>
+      </div>
+    </div>
   </div>
- 
-</div>
-<br>
+  
+  </div>
+  <br>

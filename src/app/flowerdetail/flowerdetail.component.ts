@@ -29,7 +29,7 @@ export class FlowerdetailComponent implements OnInit {
   autoTicks = false;
   disabled = false;
   invert = false;
-  max = 5;
+  max = 6;
   min = 1;
   showTicks = false;
   step = 1;
