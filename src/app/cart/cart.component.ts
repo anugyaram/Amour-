@@ -8,14 +8,19 @@ import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 })
 export class CartComponent implements OnInit {
 
-  
+  user = {username: '', password: '', remember: false};
 
   constructor(public dialogRef: MatDialogRef<CartComponent>) { }
 
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
- 
-
+  onSubmit(){
+    console.log('User:', this.user );
+    this.dialogRef.close();
+  }
+  
+  closeDialog() {
+    this.dialogRef.close();
+  }
 }

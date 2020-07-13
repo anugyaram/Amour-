@@ -1,8 +1,11 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject , HostListener} from '@angular/core';
 import { Flower } from '../shared/flower';
 import { FlowerService } from '../services/flower.service';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef,MatDialogConfig } from '@angular/material/dialog';
 import { CartComponent } from '../cart/cart.component';
+import { LoginComponent } from '../login/login.component';
+
+import { formArrayNameProvider } from '@angular/forms/src/directives/reactive_directives/form_group_name';
 
 
 @Component({
@@ -15,15 +18,17 @@ export class LuxeryComponent implements OnInit {
   flowers: Flower[];
   errMess: string;
 
-  constructor(private flowerService: FlowerService, @Inject('BaseURL') public baseURL, public dialog: MatDialog) { }
+  constructor(private flowerService: FlowerService, @Inject('BaseURL') public baseURL, public dialog: MatDialog) {}
+
 
   ngOnInit() {
     this.flowerService.getFlowers().subscribe((flowers) => this.flowers = flowers, errmess => this.errMess = <any>errmess);
   }
 
+ info(){
+  this.dialog.open(CartComponent, {width: '350px', height: '220px'});
+ }
 
-  openCart() {
-    this.dialog.open(CartComponent, {width:"500px"});
-  }
+
 
 }

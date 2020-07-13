@@ -54,6 +54,7 @@ import { CartComponent } from './cart/cart.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -108,7 +109,8 @@ import { CartComponent } from './cart/cart.component';
   ],
   entryComponents:[
     LoginComponent,
-    CarouselComponent
+    CarouselComponent,
+    CartComponent
   ],
   bootstrap: [AppComponent]
 })
