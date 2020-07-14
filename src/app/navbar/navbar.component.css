@@ -67,6 +67,7 @@
   border: none;
   font-size: medium;
   padding-top: 9px;
+  text-decoration: none;
 }
 
 .dropdown {
@@ -79,7 +80,7 @@
   position: fixed;
   background-color: white;
   min-width: 220px;
- z-index: 1;
+ 
 }
 
 .dropdown-content a {

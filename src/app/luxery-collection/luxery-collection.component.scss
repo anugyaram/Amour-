@@ -1,0 +1,69 @@
+$background-dark: red;
+.footer{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+}
+
+h1,h4{
+    text-align: center;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.img-icon {
+    position: relative;
+    display: inline-block;
+    transition: 2s all ease-in-out;
+    
+}
+
+.img-icon:hover{
+    transform: scale(1.1,1.1) ;
+    
+
+}
+.text-img{
+    position: absolute;
+      top: 62%;
+      left: 15%;
+      color: whitesmoke;
+      font-weight: bold;
+      
+      
+}
+.btn-img{
+    position: absolute;
+    top: 80%;
+    left:16%;
+}
+
+button{
+    background-color: white;
+    width: 250px;
+    height: 50px;
+    display: block;
+    border: none;
+    color:black;
+    font-size: medium;
+  }
+  
+  button {  
+    transition: .9s;
+  &:hover,
+    &:focus{ 
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    }
+  }
+  .shop-btn:hover,
+  .shop-btn:focus {
+    box-shadow: inset  1.25em 0 0 0 transparent;
+    border: 2px solid white;
+    font-weight: bold;
+  }

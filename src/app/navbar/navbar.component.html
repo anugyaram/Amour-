@@ -16,7 +16,7 @@
      
     </mat-nav-list>   
     <div class="dropdown">
-      <button class="dropbtn" > LUXERY COLLECTIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
+      <button class="dropbtn" routerLink='/luxery-collection'> LUXERY COLLECTIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
       <div class="dropdown-content" id="navbar">
         <a routerLink='/luxery'>CLASSIC CUBO</a>
         <a routerLink='/luxery'>CRYSTAL GRANDE</a>
@@ -42,8 +42,8 @@
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
       </mat-nav-list>
       
-      <div class="dropdown">
-        <button class="dropbtn">LUXERY COLLECTIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
+      <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
+        <button class="dropbtn" routerLink='/luxery-collection'>LUXERY COLLECTIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
         <div class="dropdown-content">
           <a routerLink='/luxery'>CLASSIC CUBO</a>
           <a routerLink='/luxery'>CRYSTAL GRANDE</a>

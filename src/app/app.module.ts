@@ -50,6 +50,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatIconModule } from '@angular/material';
 import { LuxeryComponent } from './luxery/luxery.component';
 import { CartComponent } from './cart/cart.component';
+import { LuxeryCollectionComponent } from './luxery-collection/luxery-collection.component';
 
 
 
@@ -69,7 +70,8 @@ import { CartComponent } from './cart/cart.component';
     CarouselComponent,
     NavbarComponent,
     LuxeryComponent,
-    CartComponent
+    CartComponent,
+    LuxeryCollectionComponent
 
     
   ],
