@@ -33,7 +33,6 @@ import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
 import { FooterComponent } from './footer/footer.component';
 import { TrendingsComponent } from './trendings/trendings.component';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
 
 import { FlowerService } from './services/flower.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
@@ -51,6 +50,8 @@ import { LuxeryComponent } from './luxery/luxery.component';
 import { CartComponent } from './cart/cart.component';
 import { LuxeryCollectionComponent } from './luxery-collection/luxery-collection.component';
 import { MainCartComponent } from './main-cart/main-cart.component';
+import { VarietyComponent } from './variety/variety.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 
@@ -64,7 +65,6 @@ import { MainCartComponent } from './main-cart/main-cart.component';
     FooterComponent,
     TrendingsComponent,
     HomeComponent,
-    ContactComponent,
     LoginComponent,
     HighlightDirective,
     CarouselComponent,
@@ -72,7 +72,9 @@ import { MainCartComponent } from './main-cart/main-cart.component';
     LuxeryComponent,
     CartComponent,
     LuxeryCollectionComponent,
-    MainCartComponent
+    MainCartComponent,
+    VarietyComponent,
+    PaymentComponent
 
     
   ],

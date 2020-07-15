@@ -1,3 +1,4 @@
+
 <div class="row">  
   <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >  
     <div ngxSlickItem *ngFor="let image of images" class="slide">  
@@ -7,5 +8,5 @@
 </div>
 
 <div class="button">
-  <a mat-stroked-button routerLink='/shop-now' routerLinkActive="active"><span class="btn">Shop Now</span></a>
+  <button routerLink='/shop-now' routerLinkActive="active" class="btn">SHOP NOW</button>
 </div>

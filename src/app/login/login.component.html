@@ -18,12 +18,12 @@
           <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel" required>
           <mat-error *ngIf="password.errors?.required">Password is required</mat-error>
         </mat-form-field>
-        <mat-checkbox [(ngModel)]="user.remember" name="remember" color="warn">Remember Me</mat-checkbox>
+        <mat-checkbox [(ngModel)]="user.remember" name="remember" color="primary">Remember Me</mat-checkbox>
       </p>
     </mat-dialog-content>
     <mat-dialog-actions>
       <span class="flex-spacer"></span>
       <button mat-button mat-dialog-close>Cancel</button>
-      <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="loginForm.form.invalid">Login</button>
+      <button type="submit" mat-button class="log">Login</button>
     </mat-dialog-actions>
   </form>

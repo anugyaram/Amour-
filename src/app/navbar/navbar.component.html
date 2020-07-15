@@ -12,7 +12,7 @@
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
       <a mat-list-item routerLink='/trendings' routerLinkActive="active">  TRENDING</a>
-      <a mat-list-item routerLink='/contactus' routerLinkActive="active">  VARIETY</a>
+      <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
      
     </mat-nav-list>   
     <div class="dropdown">
@@ -36,7 +36,7 @@
       </button>
       <span>&nbsp;<img *ngIf="!((isHandset | async)!.matches)" src="/src/assets/images/logo.jpeg" height="55px" width="110px"></span>&nbsp;&nbsp;
       <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
-      <a mat-list-item routerLink='/contactus' routerLinkActive="active">  VARIETY</a>
+      <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
       <a mat-list-item routerLink='/trendings' routerLinkActive="active">  TRENDING</a>
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
@@ -53,8 +53,8 @@
 
 
       <span class="flex-spacer"></span>
-      <a mat-stroked-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> LOGIN</a>&nbsp;
-      <a mat-stroked-button (click)="addToCart()"><span class="fa fa-cart-arrow-down fa-lg"></span> CART</a>
+      <button mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> LOGIN</button>&nbsp;
+      <button mat-button (click)="addToCart()"><span class="fa fa-cart-arrow-down fa-lg"></span> CART</button>
     </mat-toolbar>
     <div class="container jumbotron"
     fxLayout="row"
