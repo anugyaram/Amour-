@@ -1,0 +1,33 @@
+<button class="close" mat-button mat-dialog-title (click)="closeDialog()">X</button>
+
+<form>
+  <table>
+    <tr>
+      <th></th>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td><img src="/assets/images/ROSES – CLASSIC CUBO.png" height="80px" width="80px"></td>
+      <td>ROSES – CLASSIC CUBO</td>
+      <td>1</td>
+      <td>Rs. 2000</td>
+    </tr>
+    <tr>
+      <td><img  src="/assets/images/LILIES – CLASSIC RONDE.png" height="80px" width="80px"></td>
+      <td>LILIES – CLASSIC RONDE</td>
+      <td>2</td>
+      <td>Rs. 4000</td>
+    </tr>
+    <tr style="border-top:1px solid rgb(173, 173, 173) ;">
+      <td colspan="3"><b>Total</b></td>
+      <td><b>Rs. 6000</b></td>
+    </tr>
+  </table>
+  <br>
+  <div class="btn">
+    <button class="add" mat-button routerLink='/luxery-collection' (click)="closeDialog()">Continue Shopping</button>&nbsp;
+  <button class="add background-primary text-floral-white" mat-button (click)="closeDialog()">Proceed to Pay</button>
+  </div>
+</form>

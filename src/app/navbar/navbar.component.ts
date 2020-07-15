@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import { Observable } from 'rxjs';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { LoginComponent } from '../login/login.component';
+import { MainCartComponent } from '../main-cart/main-cart.component';
 
 @Component({
   selector: 'app-navbar',
@@ -46,6 +47,9 @@ export class NavbarComponent {
     this.dialog.open(LoginComponent, {width: '500px', height: '450px'});
   }
 
+  addToCart(){
+    this.dialog.open(MainCartComponent);
+  }
   
 
   }

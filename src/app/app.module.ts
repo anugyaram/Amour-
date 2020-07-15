@@ -36,7 +36,6 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { FlowerService } from './services/flower.service';
-import { PromotionService } from './services/promotion.service';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -51,6 +50,7 @@ import { MatIconModule } from '@angular/material';
 import { LuxeryComponent } from './luxery/luxery.component';
 import { CartComponent } from './cart/cart.component';
 import { LuxeryCollectionComponent } from './luxery-collection/luxery-collection.component';
+import { MainCartComponent } from './main-cart/main-cart.component';
 
 
 
@@ -71,7 +71,8 @@ import { LuxeryCollectionComponent } from './luxery-collection/luxery-collection
     NavbarComponent,
     LuxeryComponent,
     CartComponent,
-    LuxeryCollectionComponent
+    LuxeryCollectionComponent,
+    MainCartComponent
 
     
   ],
@@ -105,14 +106,14 @@ import { LuxeryCollectionComponent } from './luxery-collection/luxery-collection
   ],
   providers: [
     FlowerService,
-    PromotionService,
     ProcessHTTPMsgService,
     {provide: 'BaseURL', useValue: baseURL}
   ],
   entryComponents:[
     LoginComponent,
     CarouselComponent,
-    CartComponent
+    CartComponent,
+    MainCartComponent
   ],
   bootstrap: [AppComponent]
 })

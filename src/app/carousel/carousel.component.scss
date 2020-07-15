@@ -1,8 +1,4 @@
-$lt-gray: #fdcece;
-$background-dark: #e12323;
-$background-light: #FFD0DC;
-$background-pale: #ffd4d8;
-$background-moredark: #e52f2f;
+
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
     margin: 0px auto;
@@ -13,7 +9,7 @@ $background-moredark: #e52f2f;
 .jumbotron {
     @include zero-margin(70px,30px);
     background: white ;
-    color:#e12323;
+    color:black;
     min-height: 150px;
 }
 
@@ -21,7 +17,7 @@ $background-moredark: #e52f2f;
     display: flex;
   justify-content: center;
   align-items: center;
-    color: $background-dark;
+    color: black;
   .btn{
       text-decoration: none;
       
@@ -29,6 +25,6 @@ $background-moredark: #e52f2f;
 }
 
 .btn:hover{
-    background-color: $background-dark;
-    color: white;
+    background-color: white;
+    color: black;
 }

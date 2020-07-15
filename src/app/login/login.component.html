@@ -1,8 +1,7 @@
-<mat-toolbar >
-     Login
-    <span class="flex-spacer"></span>
-    <button mat-flat-button mat-dialog-close color="white"> &times;</button>
-</mat-toolbar>
+<button class="close" mat-button mat-dialog-title (click)="closeDialog()">X</button>
+
+  <h3><b>Login</b></h3>
+       
 <hr>
 
 <p>{{ user | json }}</p>

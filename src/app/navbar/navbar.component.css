@@ -1,5 +1,6 @@
 .sidenav-container {
   height: 100%;
+  
 }
 
 .sidenav {
@@ -17,16 +18,16 @@
 }
 
 .mat-list-item{
-  color:#E12323;
+  color:black;
 }
 
-.active {
-    background: #ffd4d8;
+.active{
+  background-color: #ddd;
 }
 
 .mat-toolbar{
     background: white ;
-    color: #E12323;   
+    color: black;   
 }
 
 .mat-button{
@@ -38,8 +39,8 @@
 }
 
 .mat-stroked-button:hover{
-  color: white;
-  background-color: #E12323;
+  color: black;
+  
 }
 
 .sticky{
@@ -63,7 +64,7 @@
 
 .dropbtn {
   background-color: white;
-  color: #E12323;
+  color: black;
   border: none;
   font-size: medium;
   padding-top: 9px;
@@ -84,7 +85,7 @@
 }
 
 .dropdown-content a {
-  color: #E12323;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -98,7 +99,7 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #FFD0DC;
+  background-color: #ddd;
   display: block;
 }
 
