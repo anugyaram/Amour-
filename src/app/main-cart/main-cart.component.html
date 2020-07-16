@@ -1,8 +1,8 @@
 <button class="close" mat-button mat-dialog-title (click)="closeDialog()">X</button>
 
 <form>
-  <table>
-    <tr>
+  <table >
+    <tr >
       <th></th>
       <th>Product</th>
       <th>Quantity</th>
@@ -28,6 +28,6 @@
   <br>
   <div class="btn">
     <button class="add" mat-button routerLink='/luxery-collection' (click)="closeDialog()">Continue Shopping</button>&nbsp;
-  <button class="add-pay" mat-button (click)="closeDialog()">Proceed to Pay</button>
+  <button class="add-pay" mat-button (click)="payment()" (click)="closeDialog()">Proceed to Pay</button>
   </div>
 </form>

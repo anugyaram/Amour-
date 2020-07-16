@@ -22,6 +22,7 @@ import { createCustomElement } from '@angular/elements';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
 
 
 import { AppComponent } from './app.component';
@@ -103,7 +104,8 @@ import { PaymentComponent } from './payment/payment.component';
     LayoutModule,
     MatIconModule,
     SlickCarouselModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule
 
   ],
   providers: [
@@ -115,7 +117,8 @@ import { PaymentComponent } from './payment/payment.component';
     LoginComponent,
     CarouselComponent,
     CartComponent,
-    MainCartComponent
+    MainCartComponent,
+    PaymentComponent
   ],
   bootstrap: [AppComponent]
 })

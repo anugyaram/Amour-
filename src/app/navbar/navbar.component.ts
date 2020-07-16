@@ -44,7 +44,7 @@ export class NavbarComponent {
   }
 
   openLoginForm() {
-    this.dialog.open(LoginComponent, {width: '500px', height: '450px'});
+    this.dialog.open(LoginComponent, {width: '500px'});
   }
 
   addToCart(){

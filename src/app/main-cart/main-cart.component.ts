@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import { PaymentComponent } from '../payment/payment.component';
 
 @Component({
   selector: 'app-main-cart',
@@ -8,7 +9,7 @@ import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 })
 export class MainCartComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<MainCartComponent>) { }
+  constructor(public dialogRef: MatDialogRef<MainCartComponent>, public dialog: MatDialog) { }
 
   ngOnInit() {
   }
@@ -16,5 +17,10 @@ export class MainCartComponent implements OnInit {
   closeDialog() {
     this.dialogRef.close();
   }
+
+  payment(){
+    this.dialog.open(PaymentComponent);
+  }
+
 
 }
