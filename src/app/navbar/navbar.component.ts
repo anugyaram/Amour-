@@ -50,6 +50,8 @@ export class NavbarComponent {
   addToCart(){
     this.dialog.open(MainCartComponent);
   }
+
+
   
 
   }
