@@ -7,12 +7,18 @@
     [attr.role]="isHandset  ? 'dialog' : 'navigation'"
     [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
     [opened]="!(isHandset | async)!.matches">
-    <mat-toolbar><img src="/src/assets/images/logo.jpeg" height="55px" width="110px"></mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
       <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
-      <a mat-list-item routerLink='/shop-occassion' routerLinkActive="active">  SHOP BY OCCASSION</a>
+      <div class="dropdown1">
+        <button class="dropbtn1" routerLink='/shop-occassion'> SHOP BY OCCASSIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
+        <div class="dropdown-content1" id="navbar1">
+          <a routerLink='/luxery'>CLASSIC CUBO</a>
+          <a routerLink='/luxery'>CRYSTAL GRANDE</a>
+          <a routerLink='/luxery'>CLASSIC RONDE</a>
+        </div>
+      </div>
       <a mat-list-item routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
     </mat-nav-list>   
     <div class="dropdown">
@@ -26,7 +32,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar #stickyMenu class="sticky">
-      <button
+      <button 
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
@@ -34,6 +40,7 @@
         *ngIf="(isHandset | async)!.matches">
         <span class="fa fa-list fa-lg"></span>
     </button>
+    <div class="flex-spacer"></div>
     <div *ngIf="!((isHandset | async)!.matches)" id="nav">
       &nbsp;<a routerLink='/home' routerLinkActive="active">  HOME</a>&nbsp;
       <a routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>&nbsp;
@@ -63,7 +70,6 @@
           <a routerLink='/luxery'>CLASSIC RONDE</a>
         </div>
       </div>
-
 
       <span class="flex-spacer"></span>
       <button mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> LOGIN</button>&nbsp;
