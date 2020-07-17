@@ -34,26 +34,27 @@
         *ngIf="(isHandset | async)!.matches">
         <span class="fa fa-list fa-lg"></span>
     </button>
-    <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
-      <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
-    <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
-    <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
-    </mat-nav-list>
+    <div *ngIf="!((isHandset | async)!.matches)" id="nav">
+      &nbsp;<a routerLink='/home' routerLinkActive="active">  HOME</a>&nbsp;
+      <a routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>&nbsp;
+      <a routerLink='/variety' routerLinkActive="active">  VARIETY</a>&nbsp;
+    </div>
+    &nbsp;
     <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
-      <button class="dropbtn" routerLink='/shop-occassion'>SHOP BY OCCASSION <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
+      <a class="dropbtn" routerLink='/shop-occassion'>SHOP BY OCCASSIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></a>
       <div class="dropdown-content">
         <a routerLink='/luxery'>CLASSIC CUBO</a>
         <a routerLink='/luxery'>CRYSTAL GRANDE</a>
         <a routerLink='/luxery'>CLASSIC RONDE</a>
       </div>
     </div>
-    
-    <span>&nbsp;<img *ngIf="!((isHandset | async)!.matches)" src="/src/assets/images/logo.jpeg" height="55px" width="110px"></span>
-
-      <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
-        <a mat-list-item routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
-        </mat-nav-list>
-      
+    &nbsp;
+    <span><img *ngIf="!((isHandset | async)!.matches)" src="/src/assets/images/logo.jpeg" height="55px" width="110px"></span>
+    &nbsp;&nbsp;
+      <div *ngIf="!((isHandset | async)!.matches)" id="nav">
+        <a routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
+        </div>
+      &nbsp;
       <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
         <button class="dropbtn" routerLink='/luxery-collection'>LUXERY COLLECTIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
         <div class="dropdown-content">

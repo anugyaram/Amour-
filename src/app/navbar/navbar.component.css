@@ -12,13 +12,20 @@
   display: none;
 }
 
-#nav .mat-list-item {
-  float: right;
-  
+#nav{
+  overflow: hidden;
 }
 
-.mat-list-item{
-  color:black;
+#nav a{
+  text-decoration: none;
+  font-size: medium;
+  display: inline-block;
+  padding: 10px;
+  color: black;
+}
+
+#nav a:hover{
+  background-color: #ddd;
 }
 
 .active{
@@ -27,7 +34,8 @@
 
 .mat-toolbar{
     background: white ;
-    color: black;   
+    color: black; 
+    padding-left: 150px;  
 }
 
 .mat-button{
@@ -62,14 +70,15 @@
   background-color: white;
   color: black;
   border: none;
-  font-size: medium;
-  padding-top: 9px;
   text-decoration: none;
+  font-size: medium;
+  padding: 10px;
+  display: inline-block;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  margin: 5px;
 }
 
 .dropdown-content {
@@ -100,7 +109,7 @@
 }
 
 .dropdown:hover .dropbtn .fa-angle-down{
-  visibility: collapse;
+  display: none;
 }
 
 .dropbtn .fa-angle-up{
