@@ -38,10 +38,6 @@
   text-decoration: none;
 }
 
-.mat-stroked-button:hover{
-  color: black;
-  
-}
 
 .sticky{
     position: fixed;
@@ -114,5 +110,3 @@
 .dropdown:hover .fa-angle-up{
   display: inline-block;
 }
-
-

@@ -32,7 +32,6 @@ import 'hammerjs';
 import { ShopNowComponent } from './shop-now/shop-now.component';
 import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
 import { FooterComponent } from './footer/footer.component';
-import { TrendingsComponent } from './trendings/trendings.component';
 import { HomeComponent } from './home/home.component';
 
 import { FlowerService } from './services/flower.service';
@@ -53,7 +52,8 @@ import { LuxeryCollectionComponent } from './luxery-collection/luxery-collection
 import { MainCartComponent } from './main-cart/main-cart.component';
 import { VarietyComponent } from './variety/variety.component';
 import { PaymentComponent } from './payment/payment.component';
-
+import { ShopOccassionComponent } from './shop-occassion/shop-occassion.component';
+import { DesignComponent } from './design/design.component';
 
 
 
@@ -64,7 +64,6 @@ import { PaymentComponent } from './payment/payment.component';
     ShopNowComponent,
     FlowerdetailComponent,
     FooterComponent,
-    TrendingsComponent,
     HomeComponent,
     LoginComponent,
     HighlightDirective,
@@ -75,7 +74,9 @@ import { PaymentComponent } from './payment/payment.component';
     LuxeryCollectionComponent,
     MainCartComponent,
     VarietyComponent,
-    PaymentComponent
+    PaymentComponent,
+    ShopOccassionComponent,
+    DesignComponent
 
     
   ],

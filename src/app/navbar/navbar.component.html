@@ -11,9 +11,9 @@
     <mat-nav-list>
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
-      <a mat-list-item routerLink='/trendings' routerLinkActive="active">  TRENDING</a>
       <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
-     
+      <a mat-list-item routerLink='/shop-occassion' routerLinkActive="active">  SHOP BY OCCASSION</a>
+      <a mat-list-item routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
     </mat-nav-list>   
     <div class="dropdown">
       <button class="dropbtn" routerLink='/luxery-collection'> LUXERY COLLECTIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
@@ -33,14 +33,26 @@
         (click)="drawer.toggle()"
         *ngIf="(isHandset | async)!.matches">
         <span class="fa fa-list fa-lg"></span>
-      </button>
-      <span>&nbsp;<img *ngIf="!((isHandset | async)!.matches)" src="/src/assets/images/logo.jpeg" height="55px" width="110px"></span>&nbsp;&nbsp;
-      <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
+    </button>
+    <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
       <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
-      <a mat-list-item routerLink='/trendings' routerLinkActive="active">  TRENDING</a>
-      <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
-      <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
-      </mat-nav-list>
+    <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
+    <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
+    </mat-nav-list>
+    <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
+      <button class="dropbtn" routerLink='/shop-occassion'>SHOP BY OCCASSION <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
+      <div class="dropdown-content">
+        <a routerLink='/luxery'>CLASSIC CUBO</a>
+        <a routerLink='/luxery'>CRYSTAL GRANDE</a>
+        <a routerLink='/luxery'>CLASSIC RONDE</a>
+      </div>
+    </div>
+    
+    <span>&nbsp;<img *ngIf="!((isHandset | async)!.matches)" src="/src/assets/images/logo.jpeg" height="55px" width="110px"></span>
+
+      <mat-nav-list *ngIf="!((isHandset | async)!.matches)" id="nav">
+        <a mat-list-item routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
+        </mat-nav-list>
       
       <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
         <button class="dropbtn" routerLink='/luxery-collection'>LUXERY COLLECTIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
