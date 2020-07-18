@@ -1,3 +1,38 @@
-<p>
-  shop-occassion works!
-</p>
+<div>
+  <h1>Shop By Occassion</h1>
+</div>
+<br>
+<div class="container" fxLayout="row" fxLayout.lt-md ="column" fxLayoutAlign.gt-sm="space-around center" fxLayoutGap="10px" 
+class="web_homePage" (scroll)="onWindowScroll($event);">    
+     <div fxFlex="25" class="img-container">
+      <img src="/assets/images/ROSES – CLASSIC CUBO.png" alt="Company Tale" height="300px" width="300px" [routerLink]="['/flowerdetail',0]" appHighlight>
+      <h4>ROSES – CLASSIC CUBO</h4>
+      <h4>Rs. 2000</h4>
+    </div>
+    <div fxFlex="25" class="img-container">
+      <img src="/assets/images/CARNATIONS - CRYSTAL GRANDE.png" alt="Company Tale" height="300px" width="300px" [routerLink]="['/flowerdetail',1]" appHighlight>
+      <h4>CARNATIONS - CRYSTAL GRANDE</h4>
+      <h4>Rs. 2000</h4>
+    </div>
+    <div fxFlex="25" class="img-container">
+      <img src="/assets/images/LILIES – CLASSIC RONDE.png" alt="Company Tale" height="300px" width="300px" [routerLink]="['/flowerdetail',2]" appHighlight>
+      <h4>LILIES – CLASSIC RONDE</h4>
+      <h4>Rs. 2000</h4>
+    </div>
+</div>
+<br><br>
+<div class="container" fxLayout="row" fxLayout.lt-md ="column" fxLayoutAlign.gt-sm="space-around center" fxLayoutGap="10px" 
+class="web_homePage" (scroll)="onWindowScroll($event);">    
+     <div fxFlex="25" class="img-container">
+      <img src="/assets/images/ROSES – PETITE HEART.png" alt="Company Tale" height="300px" width="300px" [routerLink]="['/flowerdetail',3]" appHighlight>
+      <h4>ROSES – PETITE HEART</h4>
+      <h4>Rs. 2000</h4>
+    </div>
+    <div fxFlex="25" class="img-container">
+      <img src="/assets/images/SUÈDE CUBO - LILIES.png" alt="Company Tale" height="300px" width="300px" [routerLink]="['/flowerdetail',4]" appHighlight>
+      <h4>SUÈDE CUBO - LILIES</h4>
+      <h4>Rs. 2000</h4>
+    </div>
+   
+</div>
+

@@ -1,42 +1,41 @@
-<hr class="foot">
+
 <div class="container footer" 
     fxLayout="row wrap" 
     fxLayout.lt-md="column" 
     fxLayoutAlign="center center" 
     fxLayoutGap="10px">
 
-  <div fxFlex="100" fxFlex.gt-sm="50">
-    <div fxLayout="row">
-      <div fxFlex="40" fxFlexOffset="20px">
-        <h4>Links</h4>
-        <mat-list>
-          <mat-list-item><a mat-button routerLink='/home'>Home</a></mat-list-item>
-          <mat-list-item><a mat-button routerLink='/shop-now'>Shop All</a></mat-list-item>
-          <mat-list-item><a mat-button routerLink='/trendings'>Trending</a></mat-list-item>
-          <mat-list-item><a mat-button routerLink='/variety'>Variety</a></mat-list-item>
-        </mat-list>
-      </div>
-      <div fxFlex="55">
-        <h4>Our Address</h4>
-        <address style="text-size-adjust: 80%;">
-          121, Clear Water Bay Road<br> Clear Water Bay, Kowloon<br> HONG KONG<br>
-          <i class="fa fa-phone"></i>: +852 1234 5678<br>
-          <i class="fa fa-fax"></i>: +852 8765 4321<br>
-          <i class="fa fa-envelope"></i>:
-          <a href="mailto:amourroses@flower.net">amourroses@flower.net</a>
-        </address>
-      </div>
+  <div fxFlex="100" fxFlex.gt-sm="40">
+    <div fxLayout="column">
+      <mat-toolbar>
+        <a mat-nav-list>Our Story</a>
+        <a mat-nav-list>FAQ</a>
+        <a mat-nav-list>Product Care</a>
+        <a mat-nav-list>Shipping</a>
+        <a mat-nav-list>Privacy Policy</a>
+        
+      </mat-toolbar>
+      <mat-toolbar>
+        <a mat-nav-list>Press</a>
+        <a mat-nav-list>Blog</a>
+        <a mat-nav-list>Special Events</a>
+        <a mat-nav-list>Careers</a>
+        <a mat-nav-list>Contact Us</a>
+        <a mat-nav-list>COVID-19</a>
+      </mat-toolbar>
     </div>
   </div>
-  <div fxFlex="100" fxFlex.gt-sm="45">
-    <div style="text-align:center">
-      <a mat-icon-button class="btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>&nbsp;
-      <a mat-icon-button class="btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>&nbsp;
-      <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>&nbsp;
-      <a mat-icon-button class="btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;
-      <a mat-icon-button class="btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>&nbsp;
-      <a mat-icon-button class="btn-mail" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
-    </div>
+  <div fxFlex="100" fxFlex.gt-sm="50" >
+    <mat-toolbar>
+      <img src="/src/assets/images/logo.jpeg" height="55px" width="110px">&nbsp;&nbsp;
+      
+      <a mat-nav-list class="btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>&nbsp;
+      <a mat-nav-list class="btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;
+      <a mat-nav-list class="btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>&nbsp;&nbsp;
+      
+      <input type="email" placeholder="Enter your email address" name="email">
+      <button mat-stroked-button>Subscribe</button>
+    </mat-toolbar>
   </div>
   <div>
       <p>© Copyright 2020 Amour Roses</p>

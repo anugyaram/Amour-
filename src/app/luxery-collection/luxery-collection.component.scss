@@ -3,7 +3,7 @@
 }
 
 .container{
-    margin: auto;
+    margin: 50px;
 }
 
 h1,h4{
@@ -11,33 +11,31 @@ h1,h4{
 }
 
 .img-container{
-    text-align: center;
+  padding-right: 7%;
+  text-align: center;
 }
 
-.img-icon{
+.img-container1{
+  padding-left: 7%;
+  text-align: center;
+}
+
+.img-container2{
+  padding-left: 10%;
+  text-align: center;
+}
+
+.img-container3{
+  padding-right: 7%;
+  text-align: center;
+}
+
+
+.img-icon {
     position: relative;
-	display: inline-block;
-}
-.edit {
-	padding-top: 7px;	
-	padding-right: 7px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	display: block;
-}
-.circle-icon {
-    background: #8b8484;
-    color: white;
-    padding:5px;
-    border-radius: 50%;
-}
-
-.img-icon:hover{
-    transform: scale(1,1) ;
+    display: inline-block;
+    transition: 2s all ease-in-out;
     
-
 }
-
 
 
