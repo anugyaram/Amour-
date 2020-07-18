@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { LoginComponent } from '../login/login.component';
 import { MainCartComponent } from '../main-cart/main-cart.component';
+import { visibility } from '../animations/app.animation';
 
 @Component({
   selector: 'app-navbar',

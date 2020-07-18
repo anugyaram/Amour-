@@ -10,24 +10,18 @@
     <mat-nav-list>
       <a mat-list-item routerLink='/home' routerLinkActive="active">  HOME</a>
       <a mat-list-item routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>
-      <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
-      <div class="dropdown1">
-        <button class="dropbtn1" routerLink='/shop-occassion'> SHOP BY OCCASSIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
-        <div class="dropdown-content1" id="navbar1">
-          <a routerLink='/luxery'>CLASSIC CUBO</a>
-        <a routerLink='/luxery'>CRYSTAL GRANDE</a>
-        <a routerLink='/luxery'>CLASSIC RONDE</a>
-          
-        </div>
+      <a mat-list-item routerLink='/shop-occassion' routerLinkActive="active">  SHOP BY OCCASSIONS</a> 
+      <div class="design">
+        <a mat-list-item routerLink='/variety' routerLinkActive="active">  VARIETY</a>
+        <a mat-list-item routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
       </div>
-      <a mat-list-item routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
     </mat-nav-list>   
     <div class="dropdown">
       <button class="dropbtn" routerLink='/luxery-collection'> LUXERY COLLECTIONS  <span class="fa fa-angle-down" ></span><span class="fa fa-angle-up"></span></button>
       <div class="dropdown-content" id="navbar">
-        <a routerLink='/luxery'>CLASSIC CUBO</a>
-        <a routerLink='/luxery'>CRYSTAL GRANDE</a>
-        <a routerLink='/luxery'>CLASSIC RONDE</a>
+        <a routerLink='/luxery'>LUXERY BOUQUE</a>
+        <a routerLink='/luxery'>ROSE TEDDY</a>
+        <a routerLink='/luxery'>FERRORO COLLECTION</a>
       </div>
     </div>
   </mat-sidenav>
@@ -45,34 +39,26 @@
     <div *ngIf="!((isHandset | async)!.matches)" id="nav">
       &nbsp;<a routerLink='/home' routerLinkActive="active">  HOME</a>&nbsp;
       <a routerLink='/shop-now' routerLinkActive="active">  SHOP ALL</a>&nbsp;
-      <a routerLink='/variety' routerLinkActive="active">  VARIETY</a>&nbsp;
-    </div>
-    &nbsp;
-    <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
-      <a class="dropbtn" routerLink='/shop-occassion'>SHOP BY OCCASSIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></a>
-      <div class="dropdown-content">
-        <a routerLink='/luxery'>CLASSIC CUBO</a>
-        <a routerLink='/luxery'>CRYSTAL GRANDE</a>
-        <a routerLink='/luxery'>CLASSIC RONDE</a>
-      </div>
+      <a routerLink='/shop-occassion' routerLinkActive="active">  SHOP BY OCCASSIONS</a>&nbsp;
     </div>
     &nbsp;
     <span><img *ngIf="!((isHandset | async)!.matches)" src="/src/assets/images/logo.jpeg" height="55px" width="110px"></span>
     &nbsp;&nbsp;
       <div *ngIf="!((isHandset | async)!.matches)" id="nav">
+        <a routerLink='/variety' routerLinkActive="active">  VARIETY</a>&nbsp;
         <a routerLink='/design' routerLinkActive="active">  DESIGN YOUR OWN</a>
         </div>
       &nbsp;
       <div class="dropdown" *ngIf="!((isHandset | async)!.matches)">
         <button class="dropbtn" routerLink='/luxery-collection'>LUXERY COLLECTIONS <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></button>
         <div class="dropdown-content">
-          <a routerLink='/luxery'>CLASSIC CUBO</a>
-          <a routerLink='/luxery'>CRYSTAL GRANDE</a>
-          <a routerLink='/luxery'>CLASSIC RONDE</a>
+          <a routerLink='/luxery'>LUXERY BOUQUE</a>
+          <a routerLink='/luxery'>ROSE TEDDY</a>
+          <a routerLink='/luxery'>FERRORO COLLECTION</a>
         </div>
       </div>
 
-      <span class="flex-spacer"></span>
+      
       <button mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> LOGIN</button>&nbsp;
       <button mat-button (click)="addToCart()"><span class="fa fa-cart-arrow-down fa-lg"></span> CART</button>
     </mat-toolbar>

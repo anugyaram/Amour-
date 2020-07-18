@@ -3,7 +3,7 @@
 }
 
 .container{
-    margin: auto;
+    margin: 50px;
 }
 
 h1,h4{
@@ -11,5 +11,19 @@ h1,h4{
 }
 
 .img-container{
-    text-align: center;
+  padding-right: 7%;
+  text-align: center;
+}
+
+.img-container1{
+  padding-left: 7%;
+  text-align: center;
+}
+
+
+.img-icon {
+    position: relative;
+    display: inline-block;
+    transition: 2s all ease-in-out;
+    
 }

@@ -14,7 +14,7 @@
         <h3>{{flower.name | uppercase}}</h3>
         <h4>{{flower.price}}</h4>
         <br>
-        <mat-form-field appearance="fill">
+        <mat-form-field >
           <mat-label>Select city</mat-label>
           <mat-select>
             <mat-option value="1">Delhi</mat-option>
@@ -23,19 +23,18 @@
           </mat-select>
         </mat-form-field>
         <h4>Quantity</h4>
-        <mat-slider formControlName="rating" class="example-margin"
-              [disabled]="disabled"
-              [invert]="invert"
-              [max]="max"
-              [min]="min"
-              [step]="step"
-              [thumbLabel]="thumbLabel"
-              [tickInterval]="getSliderTickInterval()"
-              [(ngModel)]="value"
-              [vertical]="vertical" >
-              </mat-slider>
-        <button class="addCart">ADD TO CART</button>
+        <div class="number">
+          &nbsp;<a type="button" (click)="minus()">
+            <i class="fa fa-minus"></i>
+          </a>
+          <input disabled [value]="quantity">
+          &nbsp;<a type="button" (click)="plus()">
+            <i class="fa fa-plus"></i>
+          </a>
+        </div>
         <br>
+        <button mat-stroked-button class="addCart">ADD TO CART</button>
+        <br><br>
         <p>{{flower.description}}</p><br>
         <p>{{flower.specifications}}</p>
       </div>
