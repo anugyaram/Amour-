@@ -11,18 +11,39 @@
         <img src="{{baseURL + flower.image}}" alt="Company Tale"  height="400px" width="400px">
       </div>
       <div fxFlex="40">
-        <h3>{{flower.name | uppercase}}</h3>
-        <h4>{{flower.price}}</h4>
+        <h2>{{flower.name | uppercase}}</h2>
+        <h3>{{flower.price}}</h3>
         <br>
-        <mat-form-field >
-          <mat-label>Select city</mat-label>
-          <mat-select>
-            <mat-option value="1">Delhi</mat-option>
-            <mat-option value="2">Pune</mat-option>
-            <mat-option value="3">Mumbai</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <h4>Quantity</h4>
+        <form>
+          <label>Select city</label><br>
+          <select>
+            <option value="1">Chennai</option>
+          </select><br>
+          <label>Rose color</label><br>
+          <select>
+            <option value="1">Red</option>
+            <option value="2">White</option>
+            <option value="3">Yellow</option>
+          </select><br>
+          <label>Box color</label><br>
+          <select>
+            <option value="1">Red</option>
+            <option value="2">White</option>
+            <option value="3">Yellow</option>
+          </select><br>
+          <label>TO</label><br>
+          <input type="text" name="to"><br>
+          <label>FROM</label><br>
+          <input type="text" name="from"><br>
+          <label>Greeting message</label><br>
+          <p>This message will be printed onto the plain white greeting card. 300 characters. No emoji.</p>
+          <textarea rows="4" cols="30"></textarea><br>
+          <label>Sender's contact number</label><br>
+          <p>In case of any questions regarding the delivery or the bouquet, we are going to contact you (the sender) on this number. NOT the recipient number needed here, you can let us know that later in the checkout.</p>
+          <input type="tel" name="number">
+        </form>
+        
+        <label>Quantity</label>
         <div class="number">
           &nbsp;<a type="button" (click)="minus()">
             <i class="fa fa-minus"></i>
@@ -31,7 +52,8 @@
           &nbsp;<a type="button" (click)="plus()">
             <i class="fa fa-plus"></i>
           </a>
-        </div>
+        </div><br>
+        <label>Subtotal:</label><label> {{flower.price}}</label>
         <br>
         <button mat-stroked-button class="addCart">ADD TO CART</button>
         <br><br>
